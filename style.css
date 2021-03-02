@@ -1,0 +1,88 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 10em 10em;
+    box-sizing: border-box; 
+    background: url('abstract-3840x2160-huawei-mediapad-m6-4k-21906.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 90% 1%;
+    position: absolute;
+}
+
+#container{
+   
+}
+
+#calculator{
+    width: 320px;
+    height: 520px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 50px;
+    margin: 0 auto;
+    backdrop-filter: blur(20px);
+    background-clip: padding-box;
+    border: 2px solid transparent;
+    box-shadow: 10px 10px 10px rgba(45, 55, 68, 0.40);
+    line-height: 1,5;
+    margin-top: -100px;
+    margin-left: 300px;
+    position: absolute;
+}
+
+#result{
+    height: 120px;
+}
+
+#history{
+    text-align: right;
+    height: 20px;
+    margin: 0 20px;
+    padding-top: 20px;
+    font-size: 15px;
+    color: #919191;
+}
+
+#output{
+    text-align: right;
+    height: 60px;
+    margin: 10px 20px;
+    font-size: 30px;
+    color: #ffffff;
+}
+#keyboard{
+    height: 400px;
+}
+
+.operator, .number, .empty{
+    width: 50px;
+    height: 50px;
+    margin: 15px;
+    float: left;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 50%;
+    border-width: 0;
+}
+.number, .operator{
+    cursor: pointer;
+}
+.operator{
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.number{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.empty{
+    background: transparent;
+}
+.operator:active, .number:active{
+    font-size: 15px;
+    color: #cfc6c6;
+}
+.operator:focus, .number:focus, .empty:focus{
+    outline: 0;
+}
